@@ -13,7 +13,7 @@ score=0
 HEIGHT = 500
 WIDTH  =700
 
-rocket= Actor("rocket2")
+rocket= Actor("rocket3")
 rocket.bottom =HEIGHT 
 rocket.x = WIDTH//2
 
