@@ -56,6 +56,7 @@ def move_astroid():
             create_astroid()
         else:
             astroid.y += 5
+            astroid.angle+=-1
 
 
 def move_cloud():
@@ -65,6 +66,7 @@ def move_cloud():
             create_cloud()
         else:
             cloud.y += 5
+            
 
 def move_meteroid():
     for meteroid in meteroids:
@@ -73,6 +75,7 @@ def move_meteroid():
             create_meteroid()
         else:
             meteroid.x += 5
+            meteroid.angle+=-1
 
 def create_astroid():
     astroid=Actor("meteorgrey1")
