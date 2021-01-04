@@ -5,7 +5,7 @@ from pygame import mixer  #module for playing music
 x=(53,81,93)  #blue colour for atmosphere sky blue
 Z=(0,0,0)     #black colour for space 
 mixer.init()  #initializing the module mixer
-mixer.music.load('C:\Program Files\Python38-32\python files\GAMES\interstellar\music\walker.mp3')
+mixer.music.load('C:\Program Files\Python38-32\code\interstellar\music\walker.mp3')
 #loading the music i edited the countdown voice and song and made it one 
 mixer.music.play() #playing it
 
