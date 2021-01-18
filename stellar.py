@@ -11,8 +11,7 @@ mixer.music.play() #playing it
 score=0      
 HEIGHT = 500
 WIDTH  =700
-
-rocket= Actor("rocket")
+rocket= Actor("rocket3")
 rocket.bottom =HEIGHT 
 rocket.x = WIDTH//2
 
@@ -103,6 +102,12 @@ def move_rocket():
         rocket.y-=10
     elif keyboard.down:
         rocket.y+=10
+    elif(keyboard.a):
+        rocket.y-=1
+        rocket.angle+=1
+    elif (keyboard.d):
+        rocket.y-=1
+        rocket.angle-=1
 
 def rocket_collision():
     global score,meteroid,astroid

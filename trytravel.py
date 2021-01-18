@@ -4,7 +4,7 @@ from random import randint
 import random
 from pygame import mixer  #module for playing music  
 mixer.init()  #initializing the module mixer
-mixer.music.load('C:\Program Files\Python38-32\code\interstellar\music\walker.mp3')
+mixer.music.load('C:\\Users\\pc\code\interstellar\music\walker.mp3')
 #loading the music i edited the countdown voice and song and made it one 
 mixer.music.play() #playing it
 
@@ -12,7 +12,7 @@ score=0
 HEIGHT = 500
 WIDTH  =700
 
-rocket= Actor("rocket3")
+rocket= Actor("rocket")
 rocket.bottom =HEIGHT 
 rocket.x = WIDTH//2
 
@@ -109,6 +109,7 @@ def move_rocket():
     elif (keyboard.d):
         rocket.y-=1
         rocket.angle-=1
+
     
 
 def rocket_collision():
